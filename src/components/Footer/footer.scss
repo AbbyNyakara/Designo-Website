@@ -1,0 +1,10 @@
+@use '../../sass/variables/variables';
+
+.footer {
+  margin-top: 300px;
+  color: variables.$clr-white;
+  background-color: variables.$clr-black;
+  width: 100%;
+  min-height: 350px;
+}
+
