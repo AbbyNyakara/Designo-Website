@@ -1,0 +1,17 @@
+@use '../../sass/variables/variables';
+
+.card__image {
+  background: url("../../assets/bg-pattern-small-circle.svg");
+}
+
+.about__card {
+  text-align: center;
+}
+
+.card__title {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
