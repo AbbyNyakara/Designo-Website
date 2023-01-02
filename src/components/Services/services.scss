@@ -1,0 +1,14 @@
+@use '../../sass/variables/variables';
+
+.services {
+  margin-top: 100px;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.services__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

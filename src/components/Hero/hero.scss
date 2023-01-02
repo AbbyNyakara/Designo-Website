@@ -1,0 +1,29 @@
+@use '../../sass/variables/variables.scss';
+@use '../../sass/components/button';
+
+.hero {
+  margin-top: 2rem;
+  background: variables.$clr-primary-orange url('../../assets/bg-pattern-hero-home.svg') top right no-repeat;
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+  color: variables.$clr-white;
+  display: flex;
+  align-items: center;
+  max-height: 550px;
+  overflow:hidden
+}
+
+.hero__phone_img {
+  position: relative;
+  top: 100px;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+}

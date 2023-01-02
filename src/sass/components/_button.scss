@@ -1,0 +1,19 @@
+@use '../variables/variables.scss';
+
+.btn {
+  color: variables.$clr-black;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background-color: variables.$clr-white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 2rem;
+  font-weight: 500;
+  &:hover {
+    background-color: variables.$clr-primary-orange;
+    color: variables.$clr-white;
+    // box-shadow: 
+  }
+}
