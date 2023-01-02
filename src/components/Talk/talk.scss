@@ -1,0 +1,28 @@
+@use '../../sass/variables/variables';
+@use '../../sass/components/button';
+
+.talk {
+  color: variables.$clr-white;
+  background-color: variables.$clr-primary-orange;
+  margin-top: 4rem;
+  padding: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.talk__main {
+  width: 50%;
+}
+
+.talk__title {
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+
+.talk__description {
+  // letter-spacing: 1.2px;
+  font-size: 1.1rem;
+}
