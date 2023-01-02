@@ -1,0 +1,36 @@
+@use '../../sass/variables/variables';
+
+.service {
+  background-image: url('../../assets/image-web-design-large.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  // The height to be adjustable 
+  min-height: 400px;
+  width: calc(90vw/2);
+  border: none;
+  border-radius: 10px;
+  color: variables.$clr-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  // object-fit: contain;
+}
+
+.service__name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.arrow__right {
+  padding-left: 12px;
+}
+
+.service__view {
+  color: variables.$clr-white;
+  letter-spacing: 1.2px;
+}
