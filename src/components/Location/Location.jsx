@@ -19,7 +19,7 @@ const Location = () => {
         map={canadaMap}
       />
 
-      <LocationCard 
+      <LocationCard
         location='Australia' 
         office='Designo AU Office' 
         address1='19 Balonne Street' 

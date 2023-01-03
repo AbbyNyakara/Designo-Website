@@ -1,0 +1,51 @@
+@use '../../sass/components/button';
+@use '../../sass/variables/variables';
+
+.contact {
+  background-color: variables.$clr-primary-orange;
+  width: 80%;
+  margin: 60px auto;
+  padding: 50px;
+  border-radius: 10px;
+  color: variables.$clr-white;
+}
+
+.contact__info {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact__details {
+  flex: 1;
+}
+
+.contact__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__details-title {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact__details-description {
+  letter-spacing: 1px;
+}
+
+.contact__form > input,
+textarea {
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  padding: 0.6rem;
+  background: transparent;
+  border-bottom: 2px solid variables.$clr-white;
+  resize: none;
+}
+
+::placeholder {
+  color: variables.$clr-white;
+}
