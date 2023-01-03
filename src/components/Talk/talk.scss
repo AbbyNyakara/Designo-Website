@@ -1,0 +1,34 @@
+@use '../../sass/variables/variables';
+@use '../../sass/components/button';
+
+.talk {
+  color: variables.$clr-white;
+  background: variables.$clr-primary-orange url('../../assets/bg-pattern-call-to-action.svg') top right no-repeat;
+  margin-top: 5rem;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: -5rem;
+  // Adding a relative position helps it to overlap
+  position: relative;
+  z-index: 1000;
+  // width: 80%;
+  // margin: auto;
+}
+
+.talk__main {
+  width: 50%;
+}
+
+.talk__title {
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+}
+
+.talk__description {
+  // letter-spacing: 1.2px;
+  font-size: 1.1rem;
+}
