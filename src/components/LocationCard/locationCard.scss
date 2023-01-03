@@ -1,0 +1,39 @@
+@use '../../sass/variables/variables';
+
+.location__card {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.location__card-offices {
+  display: flex;
+  flex: 1;
+  gap: 4rem;
+  
+}
+
+.location__details {
+  background-color: variables.$clr-pale-pink;
+  padding: 4rem;
+  flex-grow: 2;
+  border-radius: 10px;
+}
+
+.map__image {
+  border-radius: 5px;
+}
+
+.location__place {
+  color: variables.$clr-primary-orange;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+}
+
+h4 {
+  padding-bottom: 2rem;
+}
+
