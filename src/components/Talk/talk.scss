@@ -3,14 +3,18 @@
 
 .talk {
   color: variables.$clr-white;
-  background-color: variables.$clr-primary-orange;
-  margin-top: 4rem;
-  padding: 100px;
+  background: variables.$clr-primary-orange url('../../assets/bg-pattern-call-to-action.svg') top right no-repeat;
+  margin-top: 5rem;
+  padding: 50px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  margin-bottom: -5rem;
+  // Adding a relative position helps it to overlap
+  position: relative;
+  z-index: 1000;
 }
 
 .talk__main {
