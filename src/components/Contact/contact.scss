@@ -49,3 +49,15 @@ textarea {
 ::placeholder {
   color: variables.$clr-white;
 }
+
+textarea {
+  height: 100px;
+}
+
+.contact__cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}

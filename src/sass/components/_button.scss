@@ -13,7 +13,15 @@
   font-weight: 600;
   &:hover {
     background-color: variables.$clr-primary-light-orange;
-    color: variables.$clr-white;
-    // box-shadow: 
+    color: variables.$clr-white; 
   }
+}
+
+.btn--secondary {
+  background-color: variables.$clr-primary-light-orange;
+  color: variables.$clr-white;
+
+  // &:hover {
+  //   background-color: variables.$clr-pale-pink;
+  // }
 }
