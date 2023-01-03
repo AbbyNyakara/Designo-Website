@@ -1,9 +1,11 @@
+@use '../../sass/variables/variables';
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding-top: 1.5rem;
+  padding: 2rem;
 }
 
 .nav__links {
@@ -21,4 +23,9 @@
   img {
     height: 100%;
   }
+}
+
+Link {
+  text-decoration: none;
+  color: variables.$clr-black;
 }

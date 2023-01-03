@@ -1,10 +1,29 @@
 @use '../../sass/variables/variables';
 
 .footer {
-  margin-top: 300px;
   color: variables.$clr-white;
   background-color: variables.$clr-black;
-  width: 100%;
-  min-height: 350px;
+  min-height: 400px;
+  padding-top: 100px;
+}
+
+.footer__main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+  padding-top: 0;
+}
+
+.footer__left {
+  color: variables.$clr-grey;
+  display: flex;
+  gap: 7rem;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1.5rem;
 }
 
