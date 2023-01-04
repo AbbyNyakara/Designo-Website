@@ -3,8 +3,21 @@ import './companyCard.scss';
 
 
 const CompanyCard = (props) => {
+
+  const lightHeadingStyle = {
+    color: 'white'
+  }
+
+  const darkHeadingStyle = {
+    color: '#e88069'
+  }
+
+  const rowReverse = {
+    flexDirection: 'row-reverse'
+  }
+
   return (
-    <div className='company__card'>
+    <div className='company__card' style={props.style}>
       <div className="company__card-left">
         <h2 className='company__card-title'>{props.title}</h2>
         <p className='company__card-description'>
