@@ -10,6 +10,10 @@ import australiaPic from '../../assets/illustration-australia.svg';
 import ukPic from '../../assets/illustration-united-kingdom.svg';
 
 const Company = () => {
+  const rowReverse = {
+    flexDirection: 'row-reverse'
+  }
+
   return (
     <div className='company'>
       <CompanyCard
@@ -28,6 +32,7 @@ const Company = () => {
       and prompt delivery. Clients have always been impressed with our high-quality outcomes 
       that encapsulates their brand’s story and mission."
       image={worldClassImg}
+      style={rowReverse}
       />
 
       <div className="location__cards">

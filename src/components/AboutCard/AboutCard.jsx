@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import './aboutCard.scss';
 import passionateImg from '../../assets/illustration-passionate.svg';
 import resourcefulImg from '../../assets/illustration-resourceful.svg';
@@ -12,6 +13,12 @@ const AboutCard = (props) => {
       <p className='card__description'>{props.description}</p>
     </div>
   )
-}
+};
 
-export default AboutCard
+AboutCard.propTypes = {
+  image: PropTypes.element,
+  title: PropTypes.string,
+  decription: PropTypes.string
+};
+
+export default AboutCard;

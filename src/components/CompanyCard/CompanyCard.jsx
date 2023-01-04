@@ -1,6 +1,6 @@
 import React from 'react';
 import './companyCard.scss';
-
+import { PropTypes } from 'prop-types';
 
 const CompanyCard = (props) => {
 
@@ -10,10 +10,6 @@ const CompanyCard = (props) => {
 
   const darkHeadingStyle = {
     color: '#e88069'
-  }
-
-  const rowReverse = {
-    flexDirection: 'row-reverse'
   }
 
   return (
@@ -31,5 +27,13 @@ const CompanyCard = (props) => {
     </div>
   )
 }
+
+CompanyCard.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  style: PropTypes.element,
+  image: stylePropType
+}
+
 
 export default CompanyCard

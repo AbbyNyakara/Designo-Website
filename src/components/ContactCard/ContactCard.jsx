@@ -1,6 +1,6 @@
 import React from 'react';
 import './contactCard.scss';
-
+import { PropTypes } from 'prop-types';
 
 const ContactCard = (props) => {
   return (
@@ -10,6 +10,11 @@ const ContactCard = (props) => {
       <button className='btn btn--secondary'>see location</button>
     </div>
   )
+}
+
+ContactCard.propTypes = {
+  image: PropTypes.element,
+  location: PropTypes.string
 }
 
 export default ContactCard
