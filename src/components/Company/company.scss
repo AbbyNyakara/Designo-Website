@@ -1,0 +1,11 @@
+@use '../../sass/components/button';
+@use '../../sass/variables/variables';
+
+.location__cards {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
