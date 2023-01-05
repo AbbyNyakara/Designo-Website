@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import Company from './components/Company/Company';
 import WebDesign from './components/WebDesign/WebDesign';
 import AppDesign from './components/AppDesign/AppDesign';
+import GraphicDesign from './components/GraphicDesign/GraphicDesign';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/contact' element={ <Contact />} />
             <Route path='/web-design' element={<WebDesign />} />
             <Route path='/app-design' element={<AppDesign />} />
+            <Route path='/graphic-design' element={<GraphicDesign />} />
           </Routes>
         <Talk />
         <Footer />

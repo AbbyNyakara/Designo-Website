@@ -14,8 +14,10 @@ const Services = () => {
         <Link to="/app-design">
           <Service title="App Design" />
         </Link>
-        
-        <Service title="Graphic Design" />
+
+        <Link to="/graphic-design">
+          <Service title="Graphic Design" />
+        </Link>
       </div>
     </div>
   )

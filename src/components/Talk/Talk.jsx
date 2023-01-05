@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './talk.scss';
 
 const Talk = () => {
@@ -10,7 +11,10 @@ const Talk = () => {
         how our expertise can help your business grow.</p>
       </div>
       
-      <button className='btn'>get in touch</button>
+      <Link to="/contact">
+        <button className='btn'>get in touch</button>
+      </Link>
+      
     </div>
   )
 }

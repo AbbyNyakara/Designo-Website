@@ -5,6 +5,7 @@ import './designCard.scss';
 
 const DesignCard = (props) => {
   const {image, title, description} = props;
+
   return (
     <div className='design__card'>
       <div className="design__card-img">

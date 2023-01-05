@@ -13,7 +13,7 @@ const AppDesign = () => {
   return (
     <div className='app__design'>
       <DesignHeader 
-      title="app design"
+      title="App Design"
       description="Our mobile designs bring intuitive digital solutions 
       to your customers right at their fingertips."
       />
