@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import Company from './components/Company/Company';
 import WebDesign from './components/WebDesign/WebDesign';
+import AppDesign from './components/AppDesign/AppDesign';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/locations' element={ <Location />} />
             <Route path='/contact' element={ <Contact />} />
             <Route path='/web-design' element={<WebDesign />} />
+            <Route path='/app-design' element={<AppDesign />} />
           </Routes>
         <Talk />
         <Footer />

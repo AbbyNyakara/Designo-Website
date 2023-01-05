@@ -8,16 +8,18 @@ import builderImg from '../../assets/image-builder.jpg';
 import blogrImg from '../../assets/image-blogr.jpg';
 import campImg from '../../assets/image-camp.jpg';
 import Service from '../Service/Service';
+import DesignHeader from '../DesignHeader/DesignHeader';
 
 const WebDesign = () => {
   return (
     <div className='web__design'>
-      <div className="web__design_header">
-        <h2 className='web__design-title'>Web Design</h2>
-        <p className='web__design-description'>We build websites that serve as powerful marketing tools
-          and bring memorable brand experiences.</p>
-      </div>
-
+      
+      <DesignHeader 
+      title="web design" 
+      description="We build websites that serve as powerful marketing tools
+      and bring memorable brand experiences."
+      />
+      
       <div className="web__design--skill_cards">
         <DesignCard 
           image={expressImg} 

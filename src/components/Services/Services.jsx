@@ -11,7 +11,10 @@ const Services = () => {
       </Link>
       
       <div className="services__flex">
-        <Service title="App Design" />
+        <Link to="/app-design">
+          <Service title="App Design" />
+        </Link>
+        
         <Service title="Graphic Design" />
       </div>
     </div>
