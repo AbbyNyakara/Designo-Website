@@ -32,7 +32,8 @@ const Company = () => {
       and prompt delivery. Clients have always been impressed with our high-quality outcomes 
       that encapsulates their brand’s story and mission."
       image={worldClassImg}
-      style={rowReverse}
+      // style={rowReverse}
+      // isLightHeading= 'false'
       />
 
       <div className="location__cards">

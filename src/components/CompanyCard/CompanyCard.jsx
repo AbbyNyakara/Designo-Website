@@ -4,18 +4,22 @@ import { PropTypes } from 'prop-types';
 
 const CompanyCard = (props) => {
 
-  const lightHeadingStyle = {
-    color: 'white'
+  const additionalHeadingStyles = {
+    color: props.isLightHeading ? 'white' : '#e88069'
+  };
+
+  const additionalRowStyles = {
+    flexDirection: props.rowReverse ? 'row-reverse' : 'row'
+  };
+
+  const additionalTextColors = {
+    color: props.color ? '' : ''
   }
 
-  const darkHeadingStyle = {
-    color: '#e88069'
-  }
-
-  const { title, description, style, image} = props
+  const { title, description, image } = props
 
   return (
-    <div className='company__card' style={style}>
+    <div className='company__card'>
       <div className="company__card-left">
         <h2 className='company__card-title'>{title}</h2>
         <p className='company__card-description'>
@@ -33,7 +37,6 @@ const CompanyCard = (props) => {
 CompanyCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  style: PropTypes.element,
   image: PropTypes.stylePropType
 }
 
