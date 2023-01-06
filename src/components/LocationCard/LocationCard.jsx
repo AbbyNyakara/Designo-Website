@@ -15,7 +15,7 @@ const LocationCard = (props) => {
           <div className="offices__right">
             <h4>Contacts</h4>
             <p>P : {props.phone} <br />
-              M : {props.email}</p>
+               M : {props.email}</p>
           </div>
         </div>
       </div>
