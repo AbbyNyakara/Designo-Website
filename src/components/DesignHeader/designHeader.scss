@@ -1,0 +1,23 @@
+@use '../../sass/variables/variables';
+
+.design__header {
+  background: variables.$clr-primary-orange url('../../assets/bg-pattern-call-to-action.svg') top right no-repeat;
+  padding: 30px;
+  min-height: 250px;
+  border-radius: 10px;
+  color: variables.$clr-white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.design__header-title {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.design__header-description {
+  font-size: 1.1rem;
+  width: 400px;
+  margin: auto;
+}

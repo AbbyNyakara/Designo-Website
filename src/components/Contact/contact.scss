@@ -61,3 +61,34 @@ textarea {
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 750px) {
+  .contact {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .contact__info {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contact__btn {
+    width: 50%;
+    margin: auto;
+  }
+
+  .contact__details-title {
+    font-size: 1.8rem;
+  }
+
+  .contact__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+}

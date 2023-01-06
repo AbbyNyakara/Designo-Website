@@ -1,0 +1,19 @@
+@use '../../sass/variables/variables';
+
+.app__design {
+  width: 80%;
+  margin: auto;
+}
+
+.app__design--skill_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 2.5rem;
+}
+
+.app__design--other_skills {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
