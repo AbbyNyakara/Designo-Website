@@ -16,4 +16,16 @@
   display: flex;
   gap: 2rem;
   margin-top: 3rem;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1020px) {
+  .app__design--skill_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .app__design--other_skills {
+    flex-direction: column;
+  }
 }

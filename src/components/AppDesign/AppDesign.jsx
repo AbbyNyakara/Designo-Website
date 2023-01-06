@@ -1,5 +1,6 @@
 import React from 'react';
 import Service from '../Service/Service';
+import { Link } from 'react-router-dom';
 import './appDesign.scss';
 import DesignHeader from '../DesignHeader/DesignHeader';
 import DesignCard from '../DesignCard/DesignCard';
@@ -51,8 +52,13 @@ const AppDesign = () => {
       </div>
 
       <div className="app__design--other_skills">
-        <Service title="web design" />
-        <Service title="graphic design" />
+        <Link to='/web-design'>
+          <Service title="web design" />
+        </Link>
+
+        <Link to='/graphic-design'>
+          <Service title="graphic design" />
+        </Link> 
       </div>
 
     </div>

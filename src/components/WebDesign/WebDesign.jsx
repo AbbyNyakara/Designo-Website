@@ -1,5 +1,6 @@
 import React from 'react';
 import DesignCard from '../DesignCard/DesignCard';
+import { Link } from 'react-router-dom';
 import './webDesign.scss';
 import expressImg from '../../assets/image-express.jpg';
 import transferImg from '../../assets/image-transfer.jpg';
@@ -59,8 +60,13 @@ const WebDesign = () => {
       </div>
 
       <div className="web__design--other_skills">
-        <Service title="app design" />
-        <Service title="graphic design" />
+        <Link to='/app-design'>
+          <Service title="/app-design" />
+        </Link>
+
+        <Link to='/graphic-design'>
+          <Service title="graphic design" />
+        </Link>
       </div>
     </div>
   )
