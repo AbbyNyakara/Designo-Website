@@ -31,6 +31,18 @@
 }
 
 .talk__description {
-  // letter-spacing: 1.2px;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width:960px) {
+  .talk {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .talk__main {
+    width: 80%;
+  }
 }

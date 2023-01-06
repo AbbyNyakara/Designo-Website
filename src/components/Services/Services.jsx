@@ -6,19 +6,17 @@ import './services.scss';
 const Services = () => {
   return (
     <div className='services'>
-      <Link to='/web-design'>
+      <Link to='/web-design' className="top"  >
         <Service title="Web Design" />
       </Link>
-      
-      <div className="services__flex">
-        <Link to="/app-design">
-          <Service title="App Design" />
-        </Link>
 
-        <Link to="/graphic-design">
-          <Service title="Graphic Design" />
-        </Link>
-      </div>
+      <Link to="/app-design" >
+        <Service title="App Design" className='grid2' />
+      </Link>
+
+      <Link to="/graphic-design">
+        <Service title="Graphic Design" className='grid3' />
+      </Link>             
     </div>
   )
 }

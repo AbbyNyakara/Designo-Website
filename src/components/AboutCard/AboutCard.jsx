@@ -12,8 +12,10 @@ const AboutCard = (props) => {
   return (
     <div className='about__card'> 
       <img src={image} alt="" className='card__image'/>
-      <h3 className='card__title'>{title}</h3>
-      <p className='card__description'>{description}</p>
+      <div>
+        <h3 className='card__title'>{title}</h3>
+        <p className='card__description'>{description}</p>
+      </div> 
     </div>
   )
 };
