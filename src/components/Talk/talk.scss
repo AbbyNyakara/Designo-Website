@@ -2,9 +2,11 @@
 @use '../../sass/components/button';
 
 .talk {
+  width: 80%;
+  margin: auto;
   color: variables.$clr-white;
   background: variables.$clr-primary-orange url('../../assets/bg-pattern-call-to-action.svg') top right no-repeat;
-  margin-top: 5rem;
+  // margin-top: 5rem;
   padding: 50px;
   border-radius: 10px;
   display: flex;
@@ -15,8 +17,8 @@
   // Adding a relative position helps it to overlap
   position: relative;
   z-index: 1000;
-  // width: 80%;
-  // margin: auto;
+  margin-top: 5rem;
+  
 }
 
 .talk__main {
@@ -24,11 +26,27 @@
 }
 
 .talk__title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding-bottom: 1.2rem;
 }
 
 .talk__description {
-  // letter-spacing: 1.2px;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width:960px) {
+  .talk {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .talk__main {
+    width: 80%;
+  }
+
+  .talk__title {
+    font-size: 1.5rem;
+  }
 }

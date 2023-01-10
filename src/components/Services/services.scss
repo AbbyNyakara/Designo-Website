@@ -1,14 +1,19 @@
 @use '../../sass/variables/variables';
 
 .services {
-  margin-top: 100px;
-  display: flex;
-  gap: 2rem;
+  width: 100%;
+  margin-top: 5rem;
   margin-bottom: 5rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.services__flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+
+@media only screen and (max-width: 960px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
 }
+
+

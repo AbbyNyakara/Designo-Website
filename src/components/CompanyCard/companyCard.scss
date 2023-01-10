@@ -1,0 +1,77 @@
+@use '../../sass/variables/variables';
+
+.company__card {
+  width: 80%;
+  margin: auto; 
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-height: 500px;
+  background-color: variables.$clr-primary-orange;
+  margin-top: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.company__card-title {
+  color: variables.$clr-white;
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.company__card-description {
+  color: variables.$clr-white;
+}
+
+.company__card-left {
+  padding: 2rem;
+  flex: 50%;
+}
+
+.company__card-right {
+  flex: 50%;
+  width: 400px;
+  height: 400px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1020px) {
+  .company__card {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    // width: 100%;
+  }
+
+  .company__card-right img {
+    max-height: 300px;
+    border-radius: 0;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 749px){
+  .company__card {
+    width: 100%;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .company__card-right img {
+    max-height: 300px;
+    border-radius: 0;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+
+  }
+}
+
+

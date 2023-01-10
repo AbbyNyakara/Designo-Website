@@ -1,12 +1,12 @@
 @use '../../sass/variables/variables';
 
 .service {
-  background-image: url('../../assets/image-web-design-large.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   // The height to be adjustable 
   min-height: 300px;
-  width: calc(100vw/2);
+  // width: calc(100%/2);  // this width is not responsive??
+  width: 100%;
   border: none;
   border-radius: 10px;
   color: variables.$clr-white;
@@ -16,7 +16,6 @@
   align-items: center;
   text-transform: uppercase;
   cursor: pointer;
-  // object-fit: contain;
 }
 
 .service__name {
@@ -34,7 +33,3 @@
   color: variables.$clr-white;
   letter-spacing: 1.2px;
 }
-
-
-
-

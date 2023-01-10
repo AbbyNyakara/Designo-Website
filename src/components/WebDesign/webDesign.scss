@@ -1,0 +1,31 @@
+@use '../../sass/variables/variables';
+
+.web__design {
+  width: 80%;
+  margin: auto;
+}
+
+.web__design--skill_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 2.5rem;
+}
+
+.web__design--other_skills {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .web__design--skill_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .web__design--other_skills {
+    flex-direction: column;
+  }
+}

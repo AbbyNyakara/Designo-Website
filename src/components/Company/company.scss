@@ -1,0 +1,18 @@
+@use '../../sass/components/button';
+@use '../../sass/variables/variables';
+
+.location__cards {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 749px) {
+  .location__cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
