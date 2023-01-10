@@ -9,8 +9,19 @@ import eyeCamImg from '../../assets/image-eyecam.jpg';
 import faceItImg from '../../assets/image-faceit.jpg';
 import todoImg from '../../assets/image-todo.jpg';
 import loopStudioImg from '../../assets/image-loopstudios.jpg';
+import webDesignBg from '../../assets/image-web-design-large.jpg';
+import graphicDesignBg from '../../assets/image-graphic-design.jpg';
 
 const AppDesign = () => {
+
+  const webBg = {
+    backgroundImage: `url(${webDesignBg})`
+  }
+
+  const graphicBg = {
+    backgroundImage: `url(${graphicDesignBg})`
+  }
+
   return (
     <div className='app__design'>
       <DesignHeader 
@@ -53,11 +64,11 @@ const AppDesign = () => {
 
       <div className="app__design--other_skills">
         <Link to='/web-design'>
-          <Service title="web design" />
+          <Service title="web design" style={webBg}/>
         </Link>
 
         <Link to='/graphic-design'>
-          <Service title="graphic design" />
+          <Service title="graphic design" style={graphicBg} />
         </Link> 
       </div>
 

@@ -25,7 +25,11 @@
   }
 }
 
+// Link {
+//   text-decoration: none;
+//   color: variables.$clr-black;
+// }
+
 Link {
-  text-decoration: none;
-  color: variables.$clr-black;
+  all: unset;
 }

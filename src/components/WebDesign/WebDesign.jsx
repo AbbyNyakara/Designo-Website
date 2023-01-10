@@ -10,8 +10,19 @@ import blogrImg from '../../assets/image-blogr.jpg';
 import campImg from '../../assets/image-camp.jpg';
 import Service from '../Service/Service';
 import DesignHeader from '../DesignHeader/DesignHeader';
+import appDesignBg from '../../assets/image-app-design.jpg';
+import graphicDesignBg from '../../assets/image-graphic-design.jpg';
 
 const WebDesign = () => {
+  const appBg = {
+    backgroundImage: `url(${appDesignBg})`
+  }
+
+  const graphicBg = {
+    backgroundImage: `url(${graphicDesignBg})`
+  }
+
+
   return (
     <div className='web__design'>
       
@@ -24,7 +35,7 @@ const WebDesign = () => {
       <div className="web__design--skill_cards">
         <DesignCard 
           image={expressImg} 
-          title="express" 
+          title="express"
           description="A multi-carrier shipping website for ecommerce businesses" 
         />
 
@@ -61,11 +72,11 @@ const WebDesign = () => {
 
       <div className="web__design--other_skills">
         <Link to='/app-design'>
-          <Service title="/app-design" />
+          <Service title="app-design" style={appBg}/>
         </Link>
 
         <Link to='/graphic-design'>
-          <Service title="graphic design" />
+          <Service title="graphic design" style={graphicBg}/>
         </Link>
       </div>
     </div>

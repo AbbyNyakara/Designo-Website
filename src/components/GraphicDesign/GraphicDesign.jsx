@@ -7,8 +7,19 @@ import './graphicDesign.scss';
 import changeImg from '../../assets/image-change.jpg';
 import boxedWaterImg from '../../assets/image-boxed-water.jpg';
 import scienceImg from '../../assets/image-science.jpg';
+import webDesignBg from '../../assets/image-web-design-large.jpg';
+import appDesignBg from '../../assets/image-app-design.jpg';
 
 const GraphicDesign = () => {
+
+  const webBg = {
+    backgroundImage: `url(${webDesignBg})`
+  }
+
+  const appBg = {
+    backgroundImage: `url(${appDesignBg})`
+  }
+
   return (
     <div className='graphic__design'>
       <DesignHeader
@@ -38,10 +49,10 @@ const GraphicDesign = () => {
 
       <div className="graphic__design--other_skills">
         <Link to='/web-design'>
-          <Service title="web design" />
+          <Service title="web design" style={webBg}/>
         </Link>
         <Link to='/app-design'>
-          <Service title="app design" />
+          <Service title="app design" style={appBg}/>
         </Link>
       </div>
     </div>

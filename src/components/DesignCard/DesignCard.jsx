@@ -19,4 +19,7 @@ const DesignCard = (props) => {
   )
 }
 
+DesignCard.propTypes = {
+}
+
 export default DesignCard

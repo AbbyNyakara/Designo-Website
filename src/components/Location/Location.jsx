@@ -7,6 +7,11 @@ import ukMap from '../../assets/image-map-united-kingdom.png';
 
 
 const Location = () => {
+
+  const rowReverse = {
+    flexDirection: "row-reverse"
+  }
+
   return (
     <div className='locations'>
       <LocationCard 
@@ -27,6 +32,7 @@ const Location = () => {
         phone='+(02) 6720 9092'
         email='contact@designo.au'
         map={australiaMap}
+        flexDirection={rowReverse}
       />
 
       <LocationCard 

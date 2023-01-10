@@ -1,12 +1,14 @@
 @use '../../sass/variables/variables';
 
 .services {
+  width: 100%;
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 }
+
 
 @media only screen and (max-width: 960px) {
   .services {

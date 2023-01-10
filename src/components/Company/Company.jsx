@@ -10,8 +10,25 @@ import australiaPic from '../../assets/illustration-australia.svg';
 import ukPic from '../../assets/illustration-united-kingdom.svg';
 
 const Company = () => {
-  const rowReverse = {
-    flexDirection: 'row-reverse'
+  const middleCard = {
+    flexDirection: 'row-reverse',
+    backgroundColor: '#fdf3f0',
+  }
+
+  const bottomCard = {
+    backgroundColor: '#fdf3f0',
+  }
+
+  const borderRadius = {
+    borderRadius: '10px 0 0 10px'
+  }
+
+  const darkTitle = {
+    color: '#e88069'
+  }
+
+  const darkText = {
+    color: '#000'
   }
 
   return (
@@ -32,8 +49,10 @@ const Company = () => {
       and prompt delivery. Clients have always been impressed with our high-quality outcomes 
       that encapsulates their brand’s story and mission."
       image={worldClassImg}
-      // style={rowReverse}
-      // isLightHeading= 'false'
+      style={middleCard}
+      imageStyle={borderRadius}
+      titleColor={darkTitle}
+      textColor={darkText}
       />
 
       <div className="location__cards">
@@ -62,6 +81,9 @@ const Company = () => {
       appealing and captivating ways.By combining business and marketing strategies, we inspire
       audiences to take action and drive real results."
       image={realDealImg}
+      titleColor={darkTitle}
+      textColor={darkText}
+      style={bottomCard}
       />
     </div>
   )
