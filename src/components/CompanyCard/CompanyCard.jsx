@@ -4,31 +4,27 @@ import { PropTypes } from 'prop-types';
 
 const CompanyCard = (props) => {
 
-  const additionalHeadingStyles = {
-    color: props.isLightHeading ? 'white' : '#e88069'
-  };
+  // const additionalHeadingStyles = {
+  //   color: props.isLightHeading ? 'white' : '#e88069'
+  // };
 
-  const additionalRowStyles = {
-    flexDirection: props.rowReverse ? 'row-reverse' : 'row'
-  };
+  // const additionalRowStyles = {
+  //   flexDirection: props.rowReverse ? 'row-reverse' : 'row'
+  // };
 
-  const additionalTextColors = {
-    color: props.color ? '' : ''
-  }
-
-  const { title, description, image } = props
+  const { title, description, image, style, imageStyle, titleColor, textColor } = props
 
   return (
-    <div className='company__card'>
+    <div className='company__card' style={style}>
       <div className="company__card-left">
-        <h2 className='company__card-title'>{title}</h2>
-        <p className='company__card-description'>
+        <h2 className='company__card-title' style={titleColor}>{title}</h2>
+        <p className='company__card-description' style={textColor}>
           {description}
         </p>
       </div>
 
       <div className="company__card-right">
-        <img src={image} alt="" className='company__card-image' />
+        <img src={image} alt="" className='company__card-image' style={imageStyle}  />
       </div>
     </div>
   )

@@ -35,3 +35,38 @@
   font-weight: 500;
   padding-bottom: 1.5rem;
 }
+
+// Tablet view
+@media only screen and (min-width: 550px) and (max-width: 1020px) {
+  .design__card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .design__card-img {
+    flex: 50%;
+    img {
+      width: 100%;
+      border-radius: 15px 0 0 15px;
+    }
+  }
+
+  .design__card-main {
+    flex: 50%;
+    align-self: center;
+  }
+}
+
+//mobile view 
+@media only screen and (max-width: 549px) {
+  .design__card {
+    display: grid;
+  }
+
+  .design__card-img {
+    img {
+      max-height: 250px;
+    }
+  }
+}
+

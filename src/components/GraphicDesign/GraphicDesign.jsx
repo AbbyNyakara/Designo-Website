@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DesignHeader from '../DesignHeader/DesignHeader';
 import DesignCard from '../DesignCard/DesignCard';
 import Service from '../Service/Service';
@@ -6,8 +7,19 @@ import './graphicDesign.scss';
 import changeImg from '../../assets/image-change.jpg';
 import boxedWaterImg from '../../assets/image-boxed-water.jpg';
 import scienceImg from '../../assets/image-science.jpg';
+import webDesignBg from '../../assets/image-web-design-large.jpg';
+import appDesignBg from '../../assets/image-app-design.jpg';
 
 const GraphicDesign = () => {
+
+  const webBg = {
+    backgroundImage: `url(${webDesignBg})`
+  }
+
+  const appBg = {
+    backgroundImage: `url(${appDesignBg})`
+  }
+
   return (
     <div className='graphic__design'>
       <DesignHeader
@@ -36,8 +48,12 @@ const GraphicDesign = () => {
       </div>
 
       <div className="graphic__design--other_skills">
-        <Service title="web design" />
-        <Service title="app design" />
+        <Link to='/web-design'>
+          <Service title="web design" style={webBg}/>
+        </Link>
+        <Link to='/app-design'>
+          <Service title="app design" style={appBg}/>
+        </Link>
       </div>
     </div>
   )
