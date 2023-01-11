@@ -4,10 +4,10 @@ import './service.scss';
 import rightArrow from '../../assets/icon-right-arrow.svg';
 
 const Service = (props) => {
-  const {style, title} = props
+  const {style, title, onClick} = props
 
   return (
-    <div className='service' style={style}>
+    <div className='service' style={style} onClick={onClick}>
       <h2 className='service__name'>{title}</h2>
       <a href="#" className='service__view'>
         view projects
@@ -17,9 +17,9 @@ const Service = (props) => {
   )
 };
 
-Service.propTypes = {
-  title: PropTypes.string,
-  style: PropTypes.element
-}
+// Service.propTypes = {
+//   title: PropTypes.string,
+//   style: PropTypes.element
+// }
 
 export default Service
