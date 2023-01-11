@@ -9,6 +9,10 @@
 ![image](https://user-images.githubusercontent.com/81410040/211804348-f1c69911-5ac7-4e0c-9092-f36b7620fb03.png)
 ![image](https://user-images.githubusercontent.com/81410040/211804476-7d361b27-0ee3-400a-8a6b-edec811efa23.png)
 
+## LINKS
+- View the [Live Site](http://designo-website-phi.vercel.app/)
+- View the [Source Code](https://github.com/AbbyNyakara/Designo-Website)
+
 ### Technologies Used
  - ReactJS
  - SCSS
