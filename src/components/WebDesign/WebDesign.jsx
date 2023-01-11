@@ -28,7 +28,6 @@ const WebDesign = () => {
   }
 
   // Navigation functions 
-
   const toAppDesign = () => {
     navigate('/app-design')
   }
@@ -36,7 +35,6 @@ const WebDesign = () => {
   const toGraphicDesign = () => {
     navigate('/graphic-design')
   }
-
 
   return (
     <div className='web__design'>
