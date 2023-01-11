@@ -20,10 +20,10 @@ const AboutCard = (props) => {
   )
 };
 
-AboutCard.propTypes = {
-  image: PropTypes.element,
-  title: PropTypes.string,
-  decription: PropTypes.string
-};
+// AboutCard.propTypes = {
+
+//   title: PropTypes.string,
+//   decription: PropTypes.string
+// };
 
 export default AboutCard;

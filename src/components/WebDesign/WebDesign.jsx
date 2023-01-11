@@ -1,6 +1,6 @@
 import React from 'react';
 import DesignCard from '../DesignCard/DesignCard';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './webDesign.scss';
 import expressImg from '../../assets/image-express.jpg';
 import transferImg from '../../assets/image-transfer.jpg';
@@ -14,6 +14,11 @@ import appDesignBg from '../../assets/image-app-design.jpg';
 import graphicDesignBg from '../../assets/image-graphic-design.jpg';
 
 const WebDesign = () => {
+
+  // Define the navigate
+  const navigate = useNavigate();
+
+  // Backgrounds
   const appBg = {
     backgroundImage: `url(${appDesignBg})`
   }
@@ -22,6 +27,14 @@ const WebDesign = () => {
     backgroundImage: `url(${graphicDesignBg})`
   }
 
+  // Navigation functions 
+  const toAppDesign = () => {
+    navigate('/app-design')
+  }
+
+  const toGraphicDesign = () => {
+    navigate('/graphic-design')
+  }
 
   return (
     <div className='web__design'>
@@ -71,13 +84,8 @@ const WebDesign = () => {
       </div>
 
       <div className="web__design--other_skills">
-        <Link to='/app-design'>
-          <Service title="app-design" style={appBg}/>
-        </Link>
-
-        <Link to='/graphic-design'>
-          <Service title="graphic design" style={graphicBg}/>
-        </Link>
+        <Service title="app-design" style={appBg} onClick={toAppDesign} />
+        <Service title="graphic design" style={graphicBg} onClick={toGraphicDesign} />
       </div>
     </div>
   )

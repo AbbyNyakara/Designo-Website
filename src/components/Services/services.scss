@@ -9,6 +9,11 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.services__flex {
+  display: grid;
+  gap: 20px;
+}
+
 
 @media only screen and (max-width: 960px) {
   .services {
