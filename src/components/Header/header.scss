@@ -20,16 +20,8 @@
 
 .nav__logo {
   height: 30px;
+  cursor: pointer;
   img {
     height: 100%;
   }
-}
-
-// Link {
-//   text-decoration: none;
-//   color: variables.$clr-black;
-// }
-
-Link {
-  all: unset;
 }
