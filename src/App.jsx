@@ -1,5 +1,7 @@
 import './app.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Talk from './components/Talk/Talk';
@@ -10,8 +12,13 @@ import Company from './components/Company/Company';
 import WebDesign from './components/WebDesign/WebDesign';
 import AppDesign from './components/AppDesign/AppDesign';
 import GraphicDesign from './components/GraphicDesign/GraphicDesign';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({duration: 500})
+  }, [])
 
   return (
     <div className="app">
