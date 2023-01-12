@@ -27,6 +27,29 @@
   gap: 1.5rem;
 }
 
+.footer__nav {
+  padding: 2rem 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-top: 20px;
+  nav {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer__logo {
+  height: 30px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width:960px){
 
 }
