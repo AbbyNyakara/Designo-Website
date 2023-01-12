@@ -7,7 +7,7 @@ import './header.scss';
 
 const Header = () => {
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const navigate = useNavigate();
 
