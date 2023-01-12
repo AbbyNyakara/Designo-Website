@@ -52,7 +52,6 @@ const Footer = () => {
             M : contact@designo.com
           </div>
         </div>
-        
 
         <div className="footer__socials">
           <img src={facebookIcon} alt="" />
