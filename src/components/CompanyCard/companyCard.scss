@@ -45,6 +45,7 @@
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
+    max-height: unset;
     // width: 100%;
   }
 
@@ -62,6 +63,7 @@
     width: 100%;
     flex-direction: column-reverse;
     text-align: center;
+    max-height: unset;
   }
 
   .company__card-right img {
