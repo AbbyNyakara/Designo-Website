@@ -20,10 +20,38 @@
 }
 
 .hero__title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding-bottom: 2rem;
 }
 
 .hero__description {
   font-size: 1.1rem;
 }
+
+// Mobile and desktop
+@media only screen and (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    max-height: 870px;
+  }
+
+  .hero__left {
+    padding-top: 2rem;
+  }
+
+  .hero__phone_img {
+    position: relative;
+    top: -100px;
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+  }
+}
+
+// @media only screen and (max-width: 450px) {
+//   .hero {
+
+//   }
+// }
