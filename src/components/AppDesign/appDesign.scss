@@ -27,6 +27,6 @@
   }
 
   .app__design--other_skills {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }

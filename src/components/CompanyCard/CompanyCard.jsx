@@ -33,7 +33,7 @@ const CompanyCard = (props) => {
 CompanyCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.stylePropType
+  // image: PropTypes.element
 }
 
 
