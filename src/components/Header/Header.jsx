@@ -13,19 +13,19 @@ const Header = () => {
 
   const toHome = () => {
     navigate('/')
-  }
+  };
 
   const toAbout = () => {
     navigate('/about')
-  }
+  };
 
   const toLocations = () => {
     navigate('/locations')
-  }
+  };
 
   const toContact = () => {
     navigate('/contact')
-  }
+  };
 
   return (
     <nav className='nav'>
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="close__icon__mobile" onClick={() => setOpen(!open)}>
           <img src={closeIcon} alt="" />
         </div>
-        <ul className='nav__links'>
+        <ul className='nav__links' onClick={() => setOpen(!open)}>
           <li onClick={toAbout}>
             Our Company
           </li>
