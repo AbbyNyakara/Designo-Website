@@ -6,6 +6,10 @@
   align-items: center;
   height: 50px;
   padding: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10000;
 }
 
 .nav__links {

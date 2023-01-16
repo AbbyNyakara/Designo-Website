@@ -11,7 +11,6 @@ import ukPic from '../../assets/illustration-united-kingdom.svg';
 
 const Company = () => {
   const middleCard = {
-    flexDirection: 'row-reverse',
     backgroundColor: '#fdf3f0',
   }
 
@@ -19,9 +18,9 @@ const Company = () => {
     backgroundColor: '#fdf3f0',
   }
 
-  const borderRadius = {
-    borderRadius: '10px 0 0 10px'
-  }
+  // const borderRadius = {
+  //   borderRadius: '10px 0 0 10px'
+  // }
 
   const darkTitle = {
     color: '#e88069'
@@ -50,7 +49,7 @@ const Company = () => {
       that encapsulates their brand’s story and mission."
       image={worldClassImg}
       style={middleCard}
-      imageStyle={borderRadius}
+      // imageStyle={borderRadius}
       titleColor={darkTitle}
       textColor={darkText}
       />

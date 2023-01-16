@@ -49,12 +49,13 @@
     // width: 100%;
   }
 
-  .company__card-right img {
+  .company__card-right  img {
     max-height: 300px;
     border-radius: 0;
-    width: 100%;
-    object-fit: cover;
-    margin: 0;
+    min-width: 100%;
+    margin: unset;
+    // object-fit: cover;
+    // margin: 0;
   }
 }
 
