@@ -49,7 +49,8 @@ h4 {
 // tablet view
 @media only screen and (min-width: 650px) and (max-width: 1020px) {
   .location__card {
-    flex-direction: column-reverse;
+    flex-direction: unset;
+    flex-direction: column-reverse !important;
   }
 
   .location__map {

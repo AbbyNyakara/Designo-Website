@@ -32,7 +32,7 @@ const Location = () => {
         phone='+(02) 6720 9092'
         email='contact@designo.au'
         map={australiaMap}
-        flexDirection={rowReverse}
+        // flexDirection={rowReverse}
       />
 
       <LocationCard 
